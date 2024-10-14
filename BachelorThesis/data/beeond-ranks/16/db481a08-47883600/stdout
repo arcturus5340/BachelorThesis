@@ -1,0 +1,47 @@
+Create directory "storage/./data"... OK
+Create directory "storage/./data/train"... OK
+Create directory "storage/./data/valid"... OK
+Create directory "storage/db481a08-47883600"... OK
+Using collective I/O mode
+Using collective meta-data I/O mode
+The number of training batches per rank: 9
+The number of evaluation batches per rank: 8
+Starting epoch 1...
+Starting evaluation...
+Starting epoch 2...
+Starting evaluation...
+Starting epoch 3...
+Starting evaluation...
+Starting epoch 4...
+Starting evaluation...
+Starting epoch 5...
+Starting evaluation...
+
+=================== Performance Results ==================
+Total number of ranks: 16
+The number of read threads per rank: 0
+Total training set size: 63.000 GB
+Training set size per rank: 3.938 GB
+Total training emulated compute time: 14.535 s
+Training metadata time: 2.383 s
+Training raw read time: 19.395 s
+Training average raw read rate: 1.017 GB/s
+Observed training completion time: 41.223 s
+Observed average training rate: 760.111 MB/s
+Training average throughput: 7.661 samples/s
+Training throughput standard deviation: 0.389 samples/s
+Training average IO: 490.330 MB/s
+Training IO standard deviation: 24.925 MB/s
+Total evaluation set size: 16.000 GB
+Evaluation set size per rank: 1.000 GB
+Total evaluation emulated compute time: 12.920 s
+Evaluation metadata time: 0.848 s
+Evaluation raw read time: 4.390 s
+Evaluation average raw read rate: 1.141 GB/s
+Observed evaluation completion time: 19.712 s
+Observed average evaluation rate: 757.043 MB/s
+Evaluation average throughput avg: 4.061 samples/s
+Evaluation throughput standard deviation: 0.092 samples/s
+Evaluation average IO: 259.877 MB/s
+Evaluation IO standard deviation: 5.907 MB/s
+===========================================================

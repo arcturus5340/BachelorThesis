@@ -1,0 +1,56 @@
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+Create directory "./data"... OK
+Create directory "./data/train"... OK
+Create directory "./data/valid"... OK
+Create directory "results"... OK
+Using collective I/O mode
+Using collective meta-data I/O mode
+The number of training batches per rank: 9
+The number of evaluation batches per rank: 8
+Starting epoch 1...
+Starting evaluation...
+Starting epoch 2...
+Starting evaluation...
+Starting epoch 3...
+Starting evaluation...
+Starting epoch 4...
+Starting evaluation...
+Starting epoch 5...
+Starting evaluation...
+
+=================== Performance Results ==================
+Total number of ranks: 8
+The number of read threads per rank: 4
+Total training set size: 31.500 GB
+Training set size per rank: 3.938 GB
+Total training emulated compute time: 14.535 s
+Training metadata time: 224.291 s
+Training raw read time: 172.076 s
+Training average raw read rate: 120.525 MB/s
+Observed training completion time: 124.677 s
+Observed average training rate: 184.286 MB/s
+Training average throughput: 2.540 samples/s
+Training throughput standard deviation: 0.179 samples/s
+Training average IO: 162.566 MB/s
+Training IO standard deviation: 11.449 MB/s
+Total evaluation set size: 8.000 GB
+Evaluation set size per rank: 1.000 GB
+Total evaluation emulated compute time: 12.920 s
+Evaluation metadata time: 59.832 s
+Evaluation raw read time: 44.875 s
+Evaluation average raw read rate: 118.477 MB/s
+Observed evaluation completion time: 39.040 s
+Observed average evaluation rate: 197.237 MB/s
+Evaluation average throughput avg: 2.055 samples/s
+Evaluation throughput standard deviation: 0.108 samples/s
+Evaluation average IO: 131.513 MB/s
+Evaluation IO standard deviation: 6.915 MB/s
+===========================================================
+mpiexec -n 8 ./h5bench_dlio --train --evaluation --keep-files --shuffle        0.02s user 0.04s system 0% cpu 2:58.12 total

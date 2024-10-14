@@ -1,0 +1,46 @@
+Create directory "storage/./data"... OK
+Create directory "storage/./data/train"... OK
+Create directory "storage/./data/valid"... OK
+Create directory "storage/07b36939-48275981"... OK
+Using independent I/O mode
+The number of training batches per rank: 146
+The number of evaluation batches per rank: 128
+Starting epoch 1...
+Starting evaluation...
+Starting epoch 2...
+Starting evaluation...
+Starting epoch 3...
+Starting evaluation...
+Starting epoch 4...
+Starting evaluation...
+Starting epoch 5...
+Starting evaluation...
+
+=================== Performance Results ==================
+Total number of ranks: 1
+The number of read threads per rank: 0
+Total training set size: 63.875 GB
+Training set size per rank: 63.875 GB
+Total training emulated compute time: 235.790 s
+Training metadata time: 16.500 s
+Training raw read time: 136.596 s
+Training average raw read rate: 2.343 GB/s
+Observed training completion time: 389.863 s
+Observed average training rate: 2.076 GB/s
+Training average throughput: 13.111 samples/s
+Training throughput standard deviation: 0.224 samples/s
+Training average IO: 839.107 MB/s
+Training IO standard deviation: 14.326 MB/s
+Total evaluation set size: 16.000 GB
+Evaluation set size per rank: 16.000 GB
+Total evaluation emulated compute time: 206.720 s
+Evaluation metadata time: 4.855 s
+Evaluation raw read time: 34.720 s
+Evaluation average raw read rate: 2.307 GB/s
+Observed evaluation completion time: 246.591 s
+Observed average evaluation rate: 2.008 GB/s
+Evaluation average throughput avg: 5.191 samples/s
+Evaluation throughput standard deviation: 0.025 samples/s
+Evaluation average IO: 332.218 MB/s
+Evaluation IO standard deviation: 1.590 MB/s
+===========================================================

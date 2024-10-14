@@ -1,0 +1,67 @@
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+Create directory "./data"... OK
+Create directory "./data/train"... OK
+Create directory "./data/valid"... OK
+Create directory "1"... OK
+Using collective I/O mode
+Using collective meta-data I/O mode
+Starting data generation
+Number of files for training dataset: 168
+Number of files for evaluation dataset: 0
+Generation done
+mpiexec -n 6 ./h5bench_dlio --generate-data --keep-files --shuffle   14660062  0.03s user 0.04s system 0% cpu 5:51.25 total
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+Create directory "./data"... OK
+Create directory "./data/train"... OK
+Create directory "./data/valid"... OK
+Create directory "1"... OK
+Using collective I/O mode
+Using collective meta-data I/O mode
+The number of training batches per rank: 7
+The number of evaluation batches per rank: 0
+Warning: The number of requested read threads (4) is greater than the number of evaluation batches per rank (0)!
+Starting epoch 1...
+Starting epoch 2...
+Starting epoch 3...
+Starting epoch 4...
+Starting epoch 5...
+
+=================== Performance Results ==================
+Total number of ranks: 6
+The number of read threads per rank: 4
+Total training set size: 22.934 GB
+Training set size per rank: 3.822 GB
+Total training emulated compute time: 47.614 s
+Training metadata time: 16.236 s
+Training raw read time: 87.878 s
+Training average raw read rate: 222.922 MB/s
+Observed training completion time: 73.766 s
+Observed average training rate: 748.688 MB/s
+Training average throughput: 1.898 samples/s
+Training throughput standard deviation: 0.015 samples/s
+Training average IO: 265.323 MB/s
+Training IO standard deviation: 2.029 MB/s
+Total evaluation set size: 0.000  B
+Evaluation set size per rank: 0.000  B
+Total evaluation emulated compute time: 0.000 s
+Evaluation metadata time: 0.000 s
+Evaluation raw read time: 0.000 s
+Evaluation average raw read rate: 0.000  B/s
+Observed evaluation completion time: 0.000 s
+Observed average evaluation rate: 0.000  B/s
+Evaluation average throughput avg: 0.000 samples/s
+Evaluation throughput standard deviation: 0.000 samples/s
+Evaluation average IO: 0.000  B/s
+Evaluation IO standard deviation: 0.000  B/s
+===========================================================
+mpiexec -n 6 ./h5bench_dlio --train --keep-files --shuffle --seed-change-epoc  0.03s user 0.04s system 0% cpu 1:21.82 total

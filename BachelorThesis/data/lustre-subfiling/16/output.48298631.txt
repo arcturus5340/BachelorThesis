@@ -1,0 +1,48 @@
+mkdir: cannot create directory ‘storage/48298556’: File exists
+Create directory "storage/data_new"... OK
+Create directory "storage/data_new/train"... OK
+Create directory "storage/data_new/valid"... OK
+Create directory "storage/48298556"... OK
+Using Subfiling VFD
+The number of training batches per rank: 9
+The number of evaluation batches per rank: 8
+Starting epoch 1...
+Starting evaluation...
+Starting epoch 2...
+Starting evaluation...
+Starting epoch 3...
+Starting evaluation...
+Starting epoch 4...
+Starting evaluation...
+Starting epoch 5...
+Starting evaluation...
+
+=================== Performance Results ==================
+Total number of ranks: 16
+The number of read threads per rank: 0
+Total training set size: 63.000 GB
+Training set size per rank: 3.938 GB
+Total training emulated compute time: 14.535 s
+Training metadata time: 417.059 s
+Training raw read time: 339.509 s
+Training average raw read rate: 59.396 MB/s
+Observed training completion time: 771.313 s
+Observed average training rate: 26.650 MB/s
+Training average throughput: 0.409 samples/s
+Training throughput standard deviation: 0.008 samples/s
+Training average IO: 26.147 MB/s
+Training IO standard deviation: 545.389 KB/s
+Total evaluation set size: 16.000 GB
+Evaluation set size per rank: 1.000 GB
+Total evaluation emulated compute time: 12.920 s
+Evaluation metadata time: 107.383 s
+Evaluation raw read time: 90.712 s
+Evaluation average raw read rate: 56.561 MB/s
+Observed evaluation completion time: 211.125 s
+Observed average evaluation rate: 25.934 MB/s
+Evaluation average throughput avg: 0.380 samples/s
+Evaluation throughput standard deviation: 0.022 samples/s
+Evaluation average IO: 24.335 MB/s
+Evaluation IO standard deviation: 1.438 MB/s
+===========================================================
+srun --cpu_bind=cores -n 16 ./h5bench_dlio --train --evaluation --keep-files   0.02s user 0.01s system 0% cpu 16:24.95 total

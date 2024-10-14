@@ -1,0 +1,57 @@
+Create directory "storage/data_new"... OK
+Create directory "storage/data_new/train"... OK
+Create directory "storage/data_new/valid"... OK
+Create directory "storage/1"... OK
+Using Subfiling VFD
+Starting data generation
+Number of files for training dataset: 256
+Number of files for evaluation dataset: 64
+Generation done
+srun --cpu_bind=cores -n 16 ./h5bench_dlio --generate-data --keep-files    25  0.02s user 0.01s system 0% cpu 1:35:20.91 total
+Create directory "storage/data_new"... OK
+Create directory "storage/data_new/train"... OK
+Create directory "storage/data_new/valid"... OK
+Create directory "storage/1"... OK
+Using Subfiling VFD
+The number of training batches per rank: 9
+The number of evaluation batches per rank: 8
+Starting epoch 1...
+Starting evaluation...
+Starting epoch 2...
+Starting evaluation...
+Starting epoch 3...
+Starting evaluation...
+Starting epoch 4...
+Starting evaluation...
+Starting epoch 5...
+Starting evaluation...
+
+=================== Performance Results ==================
+Total number of ranks: 16
+The number of read threads per rank: 0
+Total training set size: 63.000 GB
+Training set size per rank: 3.938 GB
+Total training emulated compute time: 14.535 s
+Training metadata time: 394.402 s
+Training raw read time: 334.749 s
+Training average raw read rate: 60.264 MB/s
+Observed training completion time: 743.800 s
+Observed average training rate: 27.669 MB/s
+Training average throughput: 0.424 samples/s
+Training throughput standard deviation: 0.013 samples/s
+Training average IO: 27.128 MB/s
+Training IO standard deviation: 824.865 KB/s
+Total evaluation set size: 16.000 GB
+Evaluation set size per rank: 1.000 GB
+Total evaluation emulated compute time: 12.920 s
+Evaluation metadata time: 95.964 s
+Evaluation raw read time: 79.871 s
+Evaluation average raw read rate: 64.353 MB/s
+Observed evaluation completion time: 188.792 s
+Observed average evaluation rate: 29.236 MB/s
+Evaluation average throughput avg: 0.425 samples/s
+Evaluation throughput standard deviation: 0.026 samples/s
+Evaluation average IO: 27.220 MB/s
+Evaluation IO standard deviation: 1.691 MB/s
+===========================================================
+srun --cpu_bind=cores -n 16 ./h5bench_dlio --train --evaluation --keep-files   0.02s user 0.01s system 0% cpu 15:35.99 total

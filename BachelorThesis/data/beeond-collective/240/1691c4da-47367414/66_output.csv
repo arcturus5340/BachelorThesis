@@ -1,0 +1,46 @@
+metric, value, unit
+operation, dlio,
+ranks, 240,
+read threads, 0,
+subfiling, NO,
+chunking, NO,
+collective meta, YES,
+collective data, YES,
+train total size, 420.000, GB
+train size per rank, 1.750, GB
+train emulated compute time per epoch, "1.292, 1.292, 1.292, 1.292, 1.292", "s, s, s, s, s"
+train emulated compute time, 6.460, s
+train metadata time per epoch, "1.542, 1.736, 1.595, 1.278, 1.363", "s, s, s, s, s"
+train metadata time, 7.513, s
+train raw read time per epoch, "13.548, 13.003, 12.748, 13.437, 13.191", "s, s, s, s, s"
+train total raw read time, 65.928, s
+train raw read rate per epoch, "132.269, 137.813, 140.565, 133.361, 135.852", "MB/s, MB/s, MB/s, MB/s, MB/s"
+train avg raw read rate, 135.972, MB/s
+train observed time per epoch, "22.392, 22.386, 22.482, 22.559, 21.931", "s, s, s, s, s"
+train observed time, 111.750, s
+train observed rate per epoch, "84.927, 84.952, 84.567, 84.263, 86.826", "MB/s, MB/s, MB/s, MB/s, MB/s"
+train avg observed rate, 85.107, MB/s
+train throughput samples per second per epoch, "1.250, 1.251, 1.245, 1.241, 1.277", "samples/s, samples/s, samples/s, samples/s, samples/s"
+train throughput avg samples per second, 1.253, samples/s
+train throughput stdev samples per second, 0.012, samples/s
+train io avg, 80.187, MB/s
+train io stdev, 814.086, KB/s
+eval total size, 120.000, GB
+eval size per rank, 512.000, MB
+eval emulated compute time per epoch, "1.292, 1.292, 1.292, 1.292, 1.292", "s, s, s, s, s"
+eval emulated compute time, 6.460, s
+eval metadata time per epoch, "0.404, 0.388, 0.807, 0.592, 0.589", "s, s, s, s, s"
+eval metadata time, 2.779, s
+eval raw read time per epoch, "3.583, 3.400, 3.047, 3.370, 3.440", "s, s, s, s, s"
+eval total raw read time, 16.839, s
+eval raw read rate per epoch, "142.097, 149.727, 167.847, 151.634, 148.772", "MB/s, MB/s, MB/s, MB/s, MB/s"
+eval avg raw read rate, 152.466, MB/s
+eval observed time per epoch, "11.437, 11.807, 11.434, 11.292, 11.906", "s, s, s, s, s"
+eval observed time, 57.876, s
+eval observed rate per epoch, "50.468, 48.691, 50.483, 51.202, 48.236", "MB/s, MB/s, MB/s, MB/s, MB/s"
+eval avg observed rate, 49.816, MB/s
+eval throughput samples per second per epoch, "0.699, 0.678, 0.700, 0.708, 0.672", "samples/s, samples/s, samples/s, samples/s, samples/s"
+eval throughput avg samples per second, 0.691, samples/s
+eval throughput stdev samples per second, 0.014, samples/s
+eval io avg, 44.251, MB/s
+eval io stdev, 925.637, KB/s

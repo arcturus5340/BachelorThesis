@@ -1,0 +1,71 @@
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+Create directory "storage/./data"... OK
+Create directory "storage/./data/train"... OK
+Create directory "storage/./data/valid"... OK
+Create directory "storage/e5d98952-47353425"... OK
+Using collective I/O mode
+Using collective meta-data I/O mode
+The number of training batches per rank: 6
+The number of evaluation batches per rank: 5
+Starting epoch 1...
+Starting evaluation...
+Starting epoch 2...
+Starting evaluation...
+Starting epoch 3...
+Starting evaluation...
+Starting epoch 4...
+Starting evaluation...
+Starting epoch 5...
+Starting evaluation...
+
+=================== Performance Results ==================
+Total number of ranks: 24
+The number of read threads per rank: 0
+Total training set size: 63.000 GB
+Training set size per rank: 2.625 GB
+Total training emulated compute time: 9.690 s
+Training metadata time: 43.441 s
+Training raw read time: 61.263 s
+Training average raw read rate: 219.412 MB/s
+Observed training completion time: 175.647 s
+Observed average training rate: 81.073 MB/s
+Training average throughput: 1.197 samples/s
+Training throughput standard deviation: 0.038 samples/s
+Training average IO: 76.593 MB/s
+Training IO standard deviation: 2.417 MB/s
+Total evaluation set size: 15.000 GB
+Evaluation set size per rank: 640.000 MB
+Total evaluation emulated compute time: 8.075 s
+Evaluation metadata time: 11.076 s
+Evaluation raw read time: 15.255 s
+Evaluation average raw read rate: 210.274 MB/s
+Observed evaluation completion time: 59.149 s
+Observed average evaluation rate: 63.393 MB/s
+Evaluation average throughput avg: 0.853 samples/s
+Evaluation throughput standard deviation: 0.082 samples/s
+Evaluation average IO: 54.576 MB/s
+Evaluation IO standard deviation: 5.219 MB/s
+===========================================================

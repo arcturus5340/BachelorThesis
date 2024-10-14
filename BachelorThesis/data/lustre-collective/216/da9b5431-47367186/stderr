@@ -1,0 +1,117 @@
+[n23m0406:134338:0:134338]       ud_ep.c:280  Fatal: UD endpoint 0x45a760 to <no debug data>: unhandled timeout error
+[n23m0405:186704:0:186704]       ud_ep.c:280  Fatal: UD endpoint 0x45a760 to <no debug data>: unhandled timeout error
+[n23m0393:162538:0:162538]       ud_ep.c:280  Fatal: UD endpoint 0x45a760 to <no debug data>: unhandled timeout error
+[n23m0407:206182:0:206182]       ud_ep.c:280  Fatal: UD endpoint 0x45a760 to <no debug data>: unhandled timeout error
+[n23m0408:134968:0:134968]       ud_ep.c:280  Fatal: UD endpoint 0x45a760 to <no debug data>: unhandled timeout error
+[n23m0395:258533:0:258533]       ud_ep.c:280  Fatal: UD endpoint 0x45a760 to <no debug data>: unhandled timeout error
+[n23m0386:72255:0:72255]       ud_ep.c:280  Fatal: UD endpoint 0x45a760 to <no debug data>: unhandled timeout error
+[n23m0383:209879:0:209879]       ud_ep.c:280  Fatal: UD endpoint 0x45a760 to <no debug data>: unhandled timeout error
+[n23m0382:156519:0:156519]       ud_ep.c:280  Fatal: UD endpoint 0x45a480 to <no debug data>: unhandled timeout error
+==== backtrace (tid: 134338) ====
+ 0 0x0000000000061af0 uct_ud_ep_window_release_completed()  ???:0
+ 1 0x000000000005887d ucs_callbackq_put_id()  ???:0
+ 2 0x00000000000589b2 ucs_callbackq_put_id()  ???:0
+ 3 0x000000000004db3a ucp_worker_progress()  ???:0
+ 4 0x000000000000a7a1 mlx_ep_progress()  mlx_ep.c:0
+ 5 0x0000000000022b0d ofi_cq_progress()  osd.c:0
+ 6 0x0000000000022a97 ofi_cq_readfrom()  osd.c:0
+ 7 0x000000000062b3fe fi_cq_read()  /p/pdsd/scratch/Uploads/IMPI/other/software/libfabric/linux/v1.9.0/include/rdma/fi_eq.h:385
+ 8 0x00000000001fa7a1 MPIDI_Progress_test()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:93
+ 9 0x00000000001fa7a1 MPID_Progress_test_impl()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:152
+10 0x00000000001fa7a1 MPID_Progress_wait()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:205
+11 0x000000000078eb7e MPIR_Wait_impl()  /build/impi/_buildspace/release/../../src/mpi/request/wait.c:36
+12 0x000000000037e0a7 MPID_Wait()  /build/impi/_buildspace/release/../../src/mpid/ch4/include/mpidpost.h:115
+13 0x0000000000379901 MPIC_Sendrecv()  /build/impi/_buildspace/release/../../src/mpi/coll/helper_fns.c:345
+14 0x00000000000f85a2 MPIR_Allgather_intra_ring()  /build/impi/_buildspace/release/../../src/mpi/coll/allgather/allgather_intra_ring.c:68
+15 0x00000000000f5d45 MPIR_Allgather_intra_auto()  /build/impi/_buildspace/release/../../src/mpi/coll/intel/allgather/allgather_allcomm_auto.c:59
+16 0x0000000000520649 MPIDU_bc_allgather()  /build/impi/_buildspace/release/../../src/mpid/common/bc/intel/mpidu_bc.c:190
+17 0x000000000061d5dc insert_addr_table_roots_only()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:458
+18 0x000000000061d5dc MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1598
+19 0x00000000001f7c09 MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1530
+20 0x0000000000495815 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:177
+21 0x0000000000495815 PMPI_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:320
+22 0x0000000000406279 main()  /rwthfs/rz/cluster/home/kr166361/h5bench/dlio/h5bench_dlio.c:718
+23 0x000000000003a7e5 __libc_start_main()  ???:0
+24 0x00000000004035ce _start()  ???:0
+=================================
+==== backtrace (tid: 162538) ====
+ 0 0x0000000000061af0 uct_ud_ep_window_release_completed()  ???:0
+ 1 0x000000000005887d ucs_callbackq_put_id()  ???:0
+ 2 0x00000000000589b2 ucs_callbackq_put_id()  ???:0
+ 3 0x000000000004db3a ucp_worker_progress()  ???:0
+ 4 0x000000000000a7a1 mlx_ep_progress()  mlx_ep.c:0
+ 5 0x0000000000022b0d ofi_cq_progress()  osd.c:0
+ 6 0x0000000000022a97 ofi_cq_readfrom()  osd.c:0
+ 7 0x000000000062b3fe fi_cq_read()  /p/pdsd/scratch/Uploads/IMPI/other/software/libfabric/linux/v1.9.0/include/rdma/fi_eq.h:385
+ 8 0x00000000001fa7a1 MPIDI_Progress_test()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:93
+ 9 0x00000000001fa7a1 MPID_Progress_test_impl()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:152
+10 0x00000000001fa7a1 MPID_Progress_wait()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:205
+11 0x000000000078eb7e MPIR_Wait_impl()  /build/impi/_buildspace/release/../../src/mpi/request/wait.c:36
+12 0x000000000037e0a7 MPID_Wait()  /build/impi/_buildspace/release/../../src/mpid/ch4/include/mpidpost.h:115
+13 0x000000000037991e MPIC_Sendrecv()  /build/impi/_buildspace/release/../../src/mpi/coll/helper_fns.c:347
+14 0x00000000000f85a2 MPIR_Allgather_intra_ring()  /build/impi/_buildspace/release/../../src/mpi/coll/allgather/allgather_intra_ring.c:68
+15 0x00000000000f5d45 MPIR_Allgather_intra_auto()  /build/impi/_buildspace/release/../../src/mpi/coll/intel/allgather/allgather_allcomm_auto.c:59
+16 0x0000000000520649 MPIDU_bc_allgather()  /build/impi/_buildspace/release/../../src/mpid/common/bc/intel/mpidu_bc.c:190
+17 0x000000000061d5dc insert_addr_table_roots_only()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:458
+18 0x000000000061d5dc MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1598
+19 0x00000000001f7c09 MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1530
+20 0x0000000000495815 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:177
+21 0x0000000000495815 PMPI_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:320
+22 0x0000000000406279 main()  /rwthfs/rz/cluster/home/kr166361/h5bench/dlio/h5bench_dlio.c:718
+23 0x000000000003a7e5 __libc_start_main()  ???:0
+24 0x00000000004035ce _start()  ???:0
+=================================
+==== backtrace (tid: 206182) ====
+ 0 0x0000000000061af0 uct_ud_ep_window_release_completed()  ???:0
+ 1 0x000000000005887d ucs_callbackq_put_id()  ???:0
+ 2 0x00000000000589b2 ucs_callbackq_put_id()  ???:0
+ 3 0x000000000004db3a ucp_worker_progress()  ???:0
+ 4 0x000000000000a7a1 mlx_ep_progress()  mlx_ep.c:0
+ 5 0x0000000000022b0d ofi_cq_progress()  osd.c:0
+ 6 0x0000000000022a97 ofi_cq_readfrom()  osd.c:0
+ 7 0x000000000062b3fe fi_cq_read()  /p/pdsd/scratch/Uploads/IMPI/other/software/libfabric/linux/v1.9.0/include/rdma/fi_eq.h:385
+ 8 0x00000000001fa7a1 MPIDI_Progress_test()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:93
+ 9 0x00000000001fa7a1 MPID_Progress_test_impl()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:152
+10 0x00000000001fa7a1 MPID_Progress_wait()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:205
+11 0x000000000078eb7e MPIR_Wait_impl()  /build/impi/_buildspace/release/../../src/mpi/request/wait.c:36
+12 0x000000000037e0a7 MPID_Wait()  /build/impi/_buildspace/release/../../src/mpid/ch4/include/mpidpost.h:115
+13 0x0000000000379901 MPIC_Sendrecv()  /build/impi/_buildspace/release/../../src/mpi/coll/helper_fns.c:345
+14 0x00000000000f85a2 MPIR_Allgather_intra_ring()  /build/impi/_buildspace/release/../../src/mpi/coll/allgather/allgather_intra_ring.c:68
+15 0x00000000000f5d45 MPIR_Allgather_intra_auto()  /build/impi/_buildspace/release/../../src/mpi/coll/intel/allgather/allgather_allcomm_auto.c:59
+16 0x0000000000520649 MPIDU_bc_allgather()  /build/impi/_buildspace/release/../../src/mpid/common/bc/intel/mpidu_bc.c:190
+17 0x000000000061d5dc insert_addr_table_roots_only()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:458
+18 0x000000000061d5dc MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1598
+19 0x00000000001f7c09 MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1530
+20 0x0000000000495815 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:177
+21 0x0000000000495815 PMPI_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:320
+22 0x0000000000406279 main()  /rwthfs/rz/cluster/home/kr166361/h5bench/dlio/h5bench_dlio.c:718
+23 0x000000000003a7e5 __libc_start_main()  ???:0
+24 0x00000000004035ce _start()  ???:0
+=================================
+==== backtrace (tid: 186704) ====
+ 0 0x0000000000061af0 uct_ud_ep_window_release_completed()  ???:0
+ 1 0x000000000005887d ucs_callbackq_put_id()  ???:0
+ 2 0x00000000000589b2 ucs_callbackq_put_id()  ???:0
+ 3 0x000000000004db3a ucp_worker_progress()  ???:0
+ 4 0x000000000000a7a1 mlx_ep_progress()  mlx_ep.c:0
+ 5 0x0000000000022b0d ofi_cq_progress()  osd.c:0
+ 6 0x0000000000022a97 ofi_cq_readfrom()  osd.c:0
+ 7 0x000000000062b3fe fi_cq_read()  /p/pdsd/scratch/Uploads/IMPI/other/software/libfabric/linux/v1.9.0/include/rdma/fi_eq.h:385
+ 8 0x00000000001fa7a1 MPIDI_Progress_test()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:93
+ 9 0x00000000001fa7a1 MPID_Progress_test_impl()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:152
+10 0x00000000001fa7a1 MPID_Progress_wait()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_progress.c:205
+11 0x000000000078eb7e MPIR_Wait_impl()  /build/impi/_buildspace/release/../../src/mpi/request/wait.c:36
+12 0x000000000037e0a7 MPID_Wait()  /build/impi/_buildspace/release/../../src/mpid/ch4/include/mpidpost.h:115
+13 0x0000000000379901 MPIC_Sendrecv()  /build/impi/_buildspace/release/../../src/mpi/coll/helper_fns.c:345
+14 0x00000000000f85a2 MPIR_Allgather_intra_ring()  /build/impi/_buildspace/release/../../src/mpi/coll/allgather/allgather_intra_ring.c:68
+15 0x00000000000f5d45 MPIR_Allgather_intra_auto()  /build/impi/_buildspace/release/../../src/mpi/coll/intel/allgather/allgather_allcomm_auto.c:59
+16 0x0000000000520649 MPIDU_bc_allgather()  /build/impi/_buildspace/release/../../src/mpid/common/bc/intel/mpidu_bc.c:190
+17 0x000000000061d5dc insert_addr_table_roots_only()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:458
+18 0x000000000061d5dc MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1598
+19 0x00000000001f7c09 MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1530
+20 0x0000000000495815 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:177
+21 0x0000000000495815 PMPI_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:320
+22 0x0000000000406279 main()  /rwthfs/rz/cluster/home/kr166361/h5bench/dlio/h5bench_dlio.c:718
+23 0x000000000003a7e5 __libc_start_main()  ???:0
+24 0x00000000004035ce _start()  ???:0
+=================================

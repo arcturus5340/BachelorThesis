@@ -1,0 +1,48 @@
+Create directory "./data"... OK
+Create directory "./data/train"... OK
+Create directory "./data/valid"... OK
+Create directory "results"... OK
+Using collective I/O mode
+Using collective meta-data I/O mode
+The number of training batches per rank: 36
+The number of evaluation batches per rank: 32
+Starting epoch 1...
+Starting evaluation...
+Starting epoch 2...
+Starting evaluation...
+Starting epoch 3...
+Starting evaluation...
+Starting epoch 4...
+Starting evaluation...
+Starting epoch 5...
+Starting evaluation...
+
+=================== Performance Results ==================
+Total number of ranks: 8
+The number of read threads per rank: 4
+Total training set size: 126.000 GB
+Training set size per rank: 15.750 GB
+Total training emulated compute time: 58.140 s
+Training metadata time: 238.737 s
+Training raw read time: 273.633 s
+Training average raw read rate: 294.911 MB/s
+Observed training completion time: 144.443 s
+Observed average training rate: 935.623 MB/s
+Training average throughput: 8.727 samples/s
+Training throughput standard deviation: 0.189 samples/s
+Training average IO: 558.552 MB/s
+Training IO standard deviation: 12.074 MB/s
+Total evaluation set size: 32.000 GB
+Evaluation set size per rank: 4.000 GB
+Total evaluation emulated compute time: 51.680 s
+Evaluation metadata time: 9.893 s
+Evaluation raw read time: 36.694 s
+Evaluation average raw read rate: 564.582 MB/s
+Observed evaluation completion time: 56.547 s
+Observed average evaluation rate: 4.175 GB/s
+Evaluation average throughput avg: 5.660 samples/s
+Evaluation throughput standard deviation: 0.061 samples/s
+Evaluation average IO: 362.221 MB/s
+Evaluation IO standard deviation: 3.935 MB/s
+===========================================================
+srun --cpu_bind=cores -n 8 ./h5bench_dlio --train --evaluation --keep-files    0.01s user 0.01s system 0% cpu 3:23.51 total
